@@ -15,7 +15,7 @@
     <appender name="logg" class="ch.qos.logback.core.rolling.RollingFileAppender">
 <!--        <File>${LOG_HOME}/first/logg.log</File>-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_HOME}/first/logg-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <fileNamePattern>${LOG_HOME}/first/logg-%d{yyyy-MM-dd}.log</fileNamePattern>
             <append>true</append>
             <maxHistory>10</maxHistory>
         </rollingPolicy>
@@ -28,7 +28,7 @@
     <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
 <!--        <File>${LOG_HOME}/first/error.log</File>-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_HOME}/first/error-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <fileNamePattern>${LOG_HOME}/first/error-%d{yyyy-MM-dd}.log</fileNamePattern>
             <append>true</append>
             <maxHistory>10</maxHistory>
         </rollingPolicy>
